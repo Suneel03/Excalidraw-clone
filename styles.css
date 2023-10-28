@@ -35,6 +35,19 @@
     background-color: #ECECF3;
     border-radius: 4px;
 }
+.right{
+    display: flex;
+    align-items: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+.right>button{
+    font-size: 20px !important;
+}
+.right>button:hover{
+    box-shadow:2px 4px 25px green ;
+}
+
 .btn {
     border: none ;
     padding: 4px 6px; 
@@ -69,12 +82,21 @@
     position: fixed;
     left: 10px;
     top: 30vh ;
-    border: 1px solid #ededed;
+    border: 1px solid #7c7979;
     padding: 20px; 
     display: flex;
+    border-radius: 20px;
+    box-shadow: 1px 1px 20px#106ab4;
     flex-direction: column;
     gap: 10px;
     align-items: center;
+}
+.stroking{
+    border-radius: 5x;
+    border: 80px transparent !important;
+    width: 50px;
+    box-shadow: 1px 2px 8px rgb(117, 119, 117);
+    /* display: flex; */
 }
 
 .hide {

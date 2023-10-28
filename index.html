@@ -21,13 +21,10 @@
           menu
         </button>
         <div class="options" id="actionbuttons">
-          <button
-            class="btn material-icons"
-            id="freehand"
-            onclick="onActionClick(this)"
-          >
-            edit
-          </button>
+
+          <button class="btn material-symbols-outlined">arrow_selector_tool
+            </button>
+        
           <button
             id="circle"
             class="btn material-symbols-outlined"
@@ -42,6 +39,14 @@
           >
             check_box_outline_blank
           </button>
+
+          <button
+          class="btn material-icons"
+          id="freehand"
+          onclick="onActionClick(this)"
+        >
+          edit
+        </button>
           <button
             onclick="onActionClick(this)"
             class="btn material-symbols-outlined"
@@ -56,17 +61,27 @@
           >
             ink_eraser
           </button>
+          <button class="btn material-symbols-outlined">imagesmode</button>
+          
 
 
         </div>
-        <div></div>
+
+        <div class="right">
+          <button class="btn material-symbols-outlined right-icons">group</button>
+          <button class="btn material-symbols-outlined right-icons">menu_book</button>
+  
+
+        </div>
       </div>
       <canvas id="canvas"></canvas>
       <div id="bottom">
         <div class="options">
+          <button class="btn material-symbols-outlined">remove</button>
+          <button class="btn ">100%</button>
+          <button class="btn material-symbols-outlined">add</button>
           <button class="btn material-icons" id="undo">undo</button>
           <button class="btn material-icons" id="redo">redo</button>
-          
         </div>
       </div>
     </div>
@@ -86,11 +101,11 @@
         type="color"
         name="strokestyle"
         id="strokestyle"
+        class="stroking"
         oninput="onInput(this)"
       />
     </div>
 
-   
     <script src="state.js"></script>
     <script src="drawing.js"></script>
   </body>
