@@ -10,6 +10,7 @@
 }
 #canvas {
     /* cursor: crosshair; */
+    object-fit: contain;
 }
 
 #top {
@@ -30,26 +31,6 @@
     padding: 4px 20px; 
     box-shadow: 2px 2px 6px #E1E1E1;
 }
-.right{
-    display: flex;
-    gap:20px;
-    align-items:center ;
-}
-
-.right> .library{
-    background-color: #fff;
-    display: flex;
-    /* align-items: center; */
-    gap: 10px; 
-    border-radius: 8px;
-    padding: 4px 20px; 
-    box-shadow: 2px 2px 6px #E1E1E1;
-
-}
-.right> .library:hover{
-    background-color: #8392e1;
-    border-radius: 16px;
-}
 .menu {
     background-color: #ECECF3;
     border-radius: 4px;
@@ -65,9 +46,8 @@
     background-color: #ECECF3;
     border-radius: 4px;
 }
-
 .active {
-    background-color: #5166d8;
+    background-color: #3a34eb;
     border-radius: 4px;
     color: white;
 }
@@ -82,4 +62,21 @@
     background-color: #d1d1f2;
     padding: 4px 10px;
     border-radius: 5px;
+}
+
+
+.form {
+    position: fixed;
+    left: 10px;
+    top: 30vh ;
+    border: 1px solid #ededed;
+    padding: 20px; 
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+}
+
+.hide {
+    display: none;
 }
